@@ -129,8 +129,8 @@ This creates `bangla-ocr-assignment-source.zip` with source code only (no datase
 
 | Run | Key settings | best val_loss | val_word_acc | val_cer | val_dictionary_acc |
 |---|---|---|---|---|---|
-| baseline | lstm 128, lr 1e-3, 20 epochs | | | | |
-| bigger-lstm | lstm 192, lr 7e-4, 20 epochs | | | | |
+| baseline | lstm 128, lr 1e-3, 8 epochs x 200 steps | 2.547 | 0.526 | 0.227 | 0.965 |
+| longer-training | lstm 128, lr 1e-3, 10 epochs x 250 steps | 2.419 | 0.549 | 0.213 | 0.970 |
 
 The validation words are synthetic words built from held-out handwritten characters.
 
